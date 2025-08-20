@@ -16,9 +16,12 @@ services:
   frontend:
     build: ./frontend
     container_name: react_frontend
-    command: npm start
+    command: npm run dev
     volumes:
       - ./frontend:/app
+      - /app/node_modules
     ports:
       - "5173:5173"
     working_dir: /app
+    environment:
+      - VITE_API_URL=http://django_backend:8000/
