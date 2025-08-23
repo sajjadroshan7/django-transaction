@@ -3,7 +3,7 @@
 This project consists of a **Backend built with Django** and a **Frontend built with React**.
 
 
-Please do not use Docker because it has simple problems
+Please do not use Docker because it has simple a problems
 
 ---
 
